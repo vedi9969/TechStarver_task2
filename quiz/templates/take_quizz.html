@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Take Quiz: {{ quiz.title }}</h2>
+<form method="post">
+    {% csrf_token %}
+    {% for question in questions %}
+        <fieldset>
+            <legend>{{ question.question_text }}</legend>
+            <label>
+                <input type="radio" name="{{ question.id }}" value="{{ question.option1 }}"> {{ question.option1 }}
+            </label>
+            <label>
+                <input type="radio" name="{{ question.id }}" value="{{ question.option2 }}"> {{ question.option2 }}
+            </label>
+        </fieldset>
+    {% endfor %}
+    <button type="submit">Submit Answers</button>
+</form>
+{% endblock %}

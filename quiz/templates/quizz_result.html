@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Quiz Results</h2>
+{% if results %}
+    <p>Your score: {{ results.score }}</p>
+    <a href="{% url 'home' %}">Home</a>
+{% else %}
+    <p>You have not taken this quiz yet.</p>
+{% endif %}
+{% endblock %}

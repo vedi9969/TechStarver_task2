@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Add Question to Quiz</h2>
+
+<form method="post">
+    {% csrf_token %}
+    <label for="question_text">Question:</label>
+    <input type="text" name="question_text" required>
+    <label for="option1">Option 1:</label>
+    <input type="text" name="option1" required>
+    <label for="option2">Option 2:</label>
+    <input type="text" name="option2" required>
+    <label for="answer">Correct Answer:</label>
+    <input type="text" name="answer" required>
+    <button type="submit">Add Question</button>
+</form>
+{% endblock %}
