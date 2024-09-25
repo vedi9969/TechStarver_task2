@@ -1,4 +1,6 @@
 This is Quiz-App project
+In this user can register and login to the app. They can create any quizz they want and can also play the quizzes provided by other users. The admin of the quiz can delete their own specific quiz.
+
 ![image](https://github.com/user-attachments/assets/5393abd1-1f0d-4f5d-ad50-0327731b72ac)
 ![image](https://github.com/user-attachments/assets/1c0c289e-7fb4-43f3-a40d-12380e3a1b7f)
 ![image](https://github.com/user-attachments/assets/2bac06b0-55eb-45b4-9259-13936bff51dc)
